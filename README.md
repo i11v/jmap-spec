@@ -47,7 +47,7 @@ jmap-spec/
 
 Each spec file uses markdown with JSON code blocks:
 
-```markdown
+````markdown
 # Method/name
 
 Description of the method.
@@ -56,24 +56,24 @@ Description of the method.
 
 Description of test case.
 
-\`\`\`json
+```json
 {
   "using": ["urn:ietf:params:jmap:core", "urn:ietf:params:jmap:mail"],
   "methodCalls": [
     ["Method/name", { ... }, "0"]
   ]
 }
-\`\`\`
+```
 
-\`\`\`json
+```json
 // response
 {
   "methodResponses": [
     ["Method/name", { ... }, "0"]
   ]
 }
-\`\`\`
 ```
+````
 
 ## Coverage
 
